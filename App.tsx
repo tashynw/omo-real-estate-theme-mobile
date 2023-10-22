@@ -15,6 +15,7 @@ import {
 import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
 import HomePage from './pages/home';
+import BottomNavigationBar from './components/BottomNavigationBar';
 
 function App(): JSX.Element {
   return (
@@ -27,6 +28,7 @@ function App(): JSX.Element {
             <HomePage />
           </Box>
         </ScrollView>
+        <BottomNavigationBar />
       </SafeAreaView>
     </GluestackUIProvider>
   );

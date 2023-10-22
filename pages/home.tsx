@@ -9,6 +9,7 @@ import {
   InputIcon,
   InputSlot,
   Text,
+  ScrollView,
 } from '@gluestack-ui/themed';
 import {
   Bell,
@@ -22,12 +23,11 @@ import {
 import React from 'react';
 import HouseCategoryIcon from '../components/HouseCategoryIcon';
 import {TouchableOpacity} from 'react-native';
+import PropertyCard from '../components/PropertyCard';
 
-type Props = {};
-
-const HomePage = (props: Props) => {
+const HomePage = () => {
   return (
-    <VStack w="100%" gap="$8">
+    <VStack w="100%" gap="$8" mb="$20">
       <HStack w="100%" justifyContent="space-between" alignItems="center">
         <TouchableOpacity>
           <Box
@@ -105,6 +105,86 @@ const HomePage = (props: Props) => {
           </Text>
         </TouchableOpacity>
       </HStack>
+      <ScrollView horizontal={true}>
+        <HStack gap="$3.5">
+          <PropertyCard
+            propertyTitle="Cooper's Hill"
+            location="Red Hills, St. Andrew"
+            ratings="4.5"
+            bathRooms={2}
+            bedRooms={4}
+            price="35,680,000"
+          />
+          <PropertyCard
+            propertyTitle="Cherry Gardens"
+            location="St. Andrew"
+            ratings="4.5"
+            bathRooms={2}
+            bedRooms={4}
+            price="35,680,000"
+          />
+          <PropertyCard
+            propertyTitle="Green Acres"
+            location="Spanish Town, St. Catherine"
+            ratings="4.5"
+            bathRooms={2}
+            bedRooms={4}
+            price="35,680,000"
+          />
+          <PropertyCard
+            propertyTitle="Ingleside"
+            location="Mandeville, Manchester"
+            ratings="4.5"
+            bathRooms={2}
+            bedRooms={4}
+            price="35,680,000"
+          />
+        </HStack>
+      </ScrollView>
+      <HStack justifyContent="space-between" alignItems="center">
+        <Heading size="lg">Nearby You</Heading>
+        <TouchableOpacity>
+          <Text color="$teal500" fontWeight="$semibold">
+            See All
+          </Text>
+        </TouchableOpacity>
+      </HStack>
+      <ScrollView horizontal={true}>
+        <HStack gap="$3.5">
+          <PropertyCard
+            propertyTitle="Cooper's Hill"
+            location="Red Hills, St. Andrew"
+            ratings="4.5"
+            bathRooms={2}
+            bedRooms={4}
+            price="35,680,000"
+          />
+          <PropertyCard
+            propertyTitle="Cherry Gardens"
+            location="St. Andrew"
+            ratings="4.5"
+            bathRooms={2}
+            bedRooms={4}
+            price="35,680,000"
+          />
+          <PropertyCard
+            propertyTitle="Green Acres"
+            location="Spanish Town, St. Catherine"
+            ratings="4.5"
+            bathRooms={2}
+            bedRooms={4}
+            price="35,680,000"
+          />
+          <PropertyCard
+            propertyTitle="Ingleside"
+            location="Mandeville, Manchester"
+            ratings="4.5"
+            bathRooms={2}
+            bedRooms={4}
+            price="35,680,000"
+          />
+        </HStack>
+      </ScrollView>
     </VStack>
   );
 };
