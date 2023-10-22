@@ -14,7 +14,7 @@ import {
 } from '@gluestack-ui/themed';
 import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
-import HomePage from './pages/home';
+import HomePage from './pages/Home';
 import BottomNavigationBar from './components/BottomNavigationBar';
 
 function App(): JSX.Element {
