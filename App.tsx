@@ -24,7 +24,7 @@ function App(): JSX.Element {
         <StatusBar barStyle="light-content" />
         {/*body*/}
         <ScrollView w="100%">
-          <Box w="100%" alignItems="flex-start" p={20}>
+          <Box w="100%" alignItems="flex-start" bg="white" p={20}>
             <HomePage />
           </Box>
         </ScrollView>
