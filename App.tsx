@@ -16,11 +16,12 @@ import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
 import HomePage from './pages/Home';
 import BottomNavigationBar from './components/BottomNavigationBar';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 function App(): JSX.Element {
   return (
     <GluestackUIProvider config={config}>
-      <SafeAreaView>
+      <SafeAreaView style={Colors.lighter}>
         <StatusBar barStyle="light-content" />
         {/*body*/}
         <ScrollView w="100%">

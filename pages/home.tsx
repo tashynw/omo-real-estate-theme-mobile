@@ -33,7 +33,7 @@ const HomePage = () => {
           <Box
             p={10}
             borderWidth={1}
-            borderColor="$trueGray200"
+            borderColor="$trueGray100"
             borderRadius="$full">
             <Icon as={Menu} size="xl" />
           </Box>
@@ -54,7 +54,7 @@ const HomePage = () => {
           </Box>
         </TouchableOpacity>
       </HStack>
-      <Input height="$12" bg="$trueGray200" borderRadius="$3xl">
+      <Input height="$12" bg="$trueGray100" borderRadius="$3xl">
         <InputSlot ml={10}>
           <InputIcon>
             <Icon as={Search} size="md" />

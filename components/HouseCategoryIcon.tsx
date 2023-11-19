@@ -10,7 +10,7 @@ type Props = {
 const HouseCategoryIcon = ({icon, categoryName, iconColor}: Props) => {
   return (
     <VStack gap="$2" alignItems="center">
-      <Box p={10} bg="$trueGray200" borderRadius="$full">
+      <Box p={10} bg="$trueGray100" borderRadius="$full">
         <Icon as={icon} size="xl" color={iconColor} />
       </Box>
       <Text fontSize="$sm" fontWeight="$bold">
